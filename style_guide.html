@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style guide for Gregor Maric's professional website - ultra-modern dark theme with flashy professional elements">
+    <meta name="author" content="Gregor Maric">
+    <meta name="keywords" content="web design, UI/UX, frontend development, style guide, design system, dark theme">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gregormaric.com/style-guide">
+    <meta property="og:title" content="Style Guide - Gregor Maric">
+    <meta property="og:description" content="Ultra-modern, professional design system with dark theme and flashy elements">
+    <meta property="og:image" content="https://gregormaric.com/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gregormaric.com/style-guide">
+    <meta property="twitter:title" content="Style Guide - Gregor Maric">
+    <meta property="twitter:description" content="Ultra-modern, professional design system with dark theme and flashy elements">
+    <meta property="twitter:image" content="https://gregormaric.com/assets/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- iOS specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Gregor Maric">
+    
+    <!-- Windows specific -->
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <title>Style Guide - Gregor Maric | Professional Web Design System</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/scripts.js" as="script">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Style Guide - Gregor Maric",
+      "description": "Professional web design style guide and component library",
+      "url": "https://gregormaric.com/style-guide",
+      "author": {
+        "@type": "Person",
+        "name": "Gregor Maric",
+        "jobTitle": "Web Designer & Developer",
+        "url": "https://gregormaric.com"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Gregor Maric"
+      },
+      "mainEntity": {
+        "@type": "CreativeWork",
+        "name": "Professional Design System",
+        "description": "Ultra-modern dark theme design system with interactive components"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-main" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Gregor Maric</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading Excellence...</p>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-title__line">Style Guide</span>
+                        <span class="hero-title__line hero-title__line--accent">Design System</span>
+                    </h1>
+                    <p class="hero-subtitle">Ultra-modern, professional aesthetic for Gregor Maric's digital presence</p>
+                    <div class="hero-cta">
+                        <button class="btn btn--primary">Primary Action</button>
+                        <button class="btn btn--secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Palette -->
+        <section class="section section--dark" id="colors">
+            <div class="container">
+                <h2 class="section-title">Color Palette</h2>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--primary-dark"></div>
+                        <h3 class="color-name">Primary Dark</h3>
+                        <p class="color-code">#0a0a0a</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--secondary-dark"></div>
+                        <h3 class="color-name">Secondary Dark</h3>
+                        <p class="color-code">#1a1a1a</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--gray-medium"></div>
+                        <h3 class="color-name">Gray Medium</h3>
+                        <p class="color-code">#2a2a2a</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--gray-light"></div>
+                        <h3 class="color-name">Gray Light</h3>
+                        <p class="color-code">#3a3a3a</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--accent-gradient"></div>
+                        <h3 class="color-name">Accent Gradient</h3>
+                        <p class="color-code">#4f46e5 → #7c3aed</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--cta-gradient"></div>
+                        <h3 class="color-name">CTA Gradient</h3>
+                        <p class="color-code">#f59e0b → #ef4444</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--text-primary"></div>
+                        <h3 class="color-name">Text Primary</h3>
+                        <p class="color-code">#ffffff</p>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch color-swatch--text-secondary"></div>
+                        <h3 class="color-name">Text Secondary</h3>
+                        <p class="color-code">#e5e5e5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section class="section" id="typography">
+            <div class="container">
+                <h2 class="section-title">Typography</h2>
+                <div class="typography-showcase">
+                    <div class="typography-group">
+                        <h1 class="h1">Heading 1 - Hero Title</h1>
+                        <h2 class="h2">Heading 2 - Section Title</h2>
+                        <h3 class="h3">Heading 3 - Subsection</h3>
+                        <h4 class="h4">Heading 4 - Card Title</h4>
+                        <h5 class="h5">Heading 5 - Small Title</h5>
+                        <h6 class="h6">Heading 6 - Label</h6>
+                    </div>
+                    <div class="typography-group">
+                        <p class="text-large">Large body text for introductions and important content.</p>
+                        <p class="text-body">Regular body text for standard content and descriptions.</p>
+                        <p class="text-small">Small text for captions, notes, and secondary information.</p>
+                        <p class="text-xs">Extra small text for fine print and metadata.</p>
+                    </div>
+                    <div class="typography-group">
+                        <code class="code">const greeting = "Hello World";</code>
+                        <pre class="code-block"><code>function greet(name) {
+  return `Hello, ${name}!`;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section class="section section--dark" id="buttons">
+            <div class="container">
+                <h2 class="section-title">Buttons</h2>
+                <div class="button-showcase">
+                    <div class="button-group">
+                        <h3 class="showcase-subtitle">Primary Buttons</h3>
+                        <button class="btn btn--primary">Primary</button>
+                        <button class="btn btn--primary btn--large">Large Primary</button>
+                        <button class="btn btn--primary" disabled>Disabled</button>
+                    </div>
+                    <div class="button-group">
+                        <h3 class="showcase-subtitle">Secondary Buttons</h3>
+                        <button class="btn btn--secondary">Secondary</button>
+                        <button class="btn btn--secondary btn--large">Large Secondary</button>
+                        <button class="btn btn--secondary" disabled>Disabled</button>
+                    </div>
+                    <div class="button-group">
+                        <h3 class="showcase-subtitle">Ghost Buttons</h3>
+                        <button class="btn btn--ghost">Ghost</button>
+                        <button class="btn btn--ghost btn--large">Large Ghost</button>
+                        <button class="btn btn--ghost" disabled>Disabled</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="section" id="cards">
+            <div class="container">
+                <h2 class="section-title">Cards & Containers</h2>
+                <div class="cards-showcase">
+                    <div class="card card--glass">
+                        <div class="card-header">
+                            <h3 class="card-title">Glassmorphism Card</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>A modern card with glassmorphism effect, perfect for showcasing services or features.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn--primary btn--small">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="card card--gradient">
+                        <div class="card-header">
+                            <h3 class="card-title">Gradient Card</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Eye-catching gradient card with accent colors for highlighting important content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn--secondary btn--small">Explore</button>
+                        </div>
+                    </div>
+
+                    <div class="card card--solid">
+                        <div class="card-header">
+                            <h3 class="card-title">Solid Card</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Clean, solid background card for content that needs high readability.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn--ghost btn--small">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <blockquote class="testimonial-quote">
+                            "Working with Gregor was an exceptional experience. His attention to detail and modern approach to design delivered exactly what we needed."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah Johnson</span>
+                                <span class="author-title">CEO, Tech Startup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forms -->
+        <section class="section section--dark" id="forms">
+            <div class="container">
+                <h2 class="section-title">Form Elements</h2>
+                <div class="form-showcase">
+                    <form class="form-example">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interest</label>
+                            <select id="service" class="form-select">
+                                <option value="">Select a service</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="development">Development</option>
+                                <option value="consulting">Consulting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-textarea" rows="4" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <div class="form-group form-group--checkbox">
+                            <input type="checkbox" id="newsletter" class="form-checkbox">
+                            <label for="newsletter" class="form-label form-label--checkbox">Subscribe to newsletter</label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn--primary">Send Message</button>
+                            <button type="reset" class="btn btn--ghost">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Effects -->
+        <section class="section section--effects" id="effects">
+            <div class="container">
+                <h2 class="section-title">Visual Effects</h2>
+                <div class="effects-showcase">
+                    <div class="effect-demo effect-demo--glow">
+                        <h3 class="effect-title">Glow Effect</h3>
+                        <p>Hover to see the glow animation</p>
+                    </div>
+                    <div class="effect-demo effect-demo--parallax">
+                        <h3 class="effect-title">Parallax Element</h3>
+                        <p>Moves with scroll for depth</p>
+                    </div>
+                    <div class="effect-demo effect-demo--glass">
+                        <h3 class="effect-title">Glassmorphism</h3>
+                        <p>Frosted glass transparency</p>
+                    </div>
+                    <div class="effect-demo effect-demo--gradient">
+                        <h3 class="effect-title">Animated Gradient</h3>
+                        <p>Dynamic color transitions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Containers -->
+        <section class="section" id="media">
+            <div class="container">
+                <h2 class="section-title">Media Containers</h2>
+                <div class="media-showcase">
+                    <div class="media-container media-container--16-9">
+                        <div class="media-placeholder">
+                            <span>16:9 Video/Image Container</span>
+                        </div>
+                    </div>
+                    <div class="media-container media-container--4-3">
+                        <div class="media-placeholder">
+                            <span>4:3 Media Container</span>
+                        </div>
+                    </div>
+                    <div class="media-container media-container--square">
+                        <div class="media-placeholder">
+                            <span>Square Container</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress & Status Elements -->
+        <section class="section section--dark" id="progress">
+            <div class="container">
+                <h2 class="section-title">Progress & Status</h2>
+                <div class="progress-showcase">
+                    <div class="progress-group">
+                        <h3 class="showcase-subtitle">Progress Bars</h3>
+                        <div class="progress-item">
+                            <label class="progress-label">HTML/CSS Skills</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="95"></div>
+                            </div>
+                            <span class="progress-value">95%</span>
+                        </div>
+                        <div class="progress-item">
+                            <label class="progress-label">JavaScript</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="88"></div>
+                            </div>
+                            <span class="progress-value">88%</span>
+                        </div>
+                        <div class="progress-item">
+                            <label class="progress-label">UI/UX Design</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="92"></div>
+                            </div>
+                            <span class="progress-value">92%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="status-group">
+                        <h3 class="showcase-subtitle">Status Indicators</h3>
+                        <div class="status-grid">
+                            <div class="status-item status-item--success">
+                                <div class="status-icon"></div>
+                                <span class="status-text">Available</span>
+                            </div>
+                            <div class="status-item status-item--warning">
+                                <div class="status-icon"></div>
+                                <span class="status-text">Busy</span>
+                            </div>
+                            <div class="status-item status-item--error">
+                                <div class="status-icon"></div>
+                                <span class="status-text">Unavailable</span>
+                            </div>
+                            <div class="status-item status-item--info">
+                                <div class="status-icon"></div>
+                                <span class="status-text">In Meeting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges & Tags -->
+        <section class="section" id="badges">
+            <div class="container">
+                <h2 class="section-title">Badges & Tags</h2>
+                <div class="badges-showcase">
+                    <div class="badge-group">
+                        <h3 class="showcase-subtitle">Skill Badges</h3>
+                        <div class="badge-container">
+                            <span class="badge badge--primary">Frontend</span>
+                            <span class="badge badge--secondary">Backend</span>
+                            <span class="badge badge--success">Full Stack</span>
+                            <span class="badge badge--warning">Learning</span>
+                            <span class="badge badge--error">Expert</span>
+                            <span class="badge badge--info">Intermediate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tag-group">
+                        <h3 class="showcase-subtitle">Technology Tags</h3>
+                        <div class="tag-container">
+                            <span class="tag">React</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notifications & Alerts -->
+        <section class="section section--dark" id="notifications">
+            <div class="container">
+                <h2 class="section-title">Notifications & Alerts</h2>
+                <div class="notifications-showcase">
+                    <div class="alert alert--success">
+                        <div class="alert-icon"></div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Success!</h4>
+                            <p class="alert-message">Your project has been successfully deployed.</p>
+                        </div>
+                        <button class="alert-close" aria-label="Close alert">×</button>
+                    </div>
+                    
+                    <div class="alert alert--warning">
+                        <div class="alert-icon"></div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Warning</h4>
+                            <p class="alert-message">Your API rate limit is approaching the threshold.</p>
+                        </div>
+                        <button class="alert-close" aria-label="Close alert">×</button>
+                    </div>
+                    
+                    <div class="alert alert--error">
+                        <div class="alert-icon"></div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Error</h4>
+                            <p class="alert-message">Failed to connect to the database. Please try again.</p>
+                        </div>
+                        <button class="alert-close" aria-label="Close alert">×</button>
+                    </div>
+                    
+                    <div class="alert alert--info">
+                        <div class="alert-icon"></div>
+                        <div class="alert-content">
+                            <h4 class="alert-title">Information</h4>
+                            <p class="alert-message">System maintenance scheduled for tonight at 2:00 AM.</p>
+                        </div>
+                        <button class="alert-close" aria-label="Close alert">×</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Components -->
+        <section class="section" id="interactive">
+            <div class="container">
+                <h2 class="section-title">Interactive Components</h2>
+                <div class="interactive-showcase">
+                    <div class="tabs-container">
+                        <h3 class="showcase-subtitle">Tab Navigation</h3>
+                        <div class="tabs" role="tablist">
+                            <button class="tab tab--active" role="tab" aria-selected="true" data-tab="design">Design</button>
+                            <button class="tab" role="tab" aria-selected="false" data-tab="development">Development</button>
+                            <button class="tab" role="tab" aria-selected="false" data-tab="consulting">Consulting</button>
+                        </div>
+                        <div class="tab-panels">
+                            <div class="tab-panel tab-panel--active" role="tabpanel" data-panel="design">
+                                <h4>Design Services</h4>
+                                <p>Creating stunning visual experiences that engage and convert users.</p>
+                            </div>
+                            <div class="tab-panel" role="tabpanel" data-panel="development">
+                                <h4>Development Services</h4>
+                                <p>Building robust, scalable web applications with modern technologies.</p>
+                            </div>
+                            <div class="tab-panel" role="tabpanel" data-panel="consulting">
+                                <h4>Consulting Services</h4>
+                                <p>Strategic guidance for digital transformation and technology decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-container">
+                        <h3 class="showcase-subtitle">Accordion</h3>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span>What technologies do you specialize in?</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>I specialize in modern web technologies including React, Vue.js, Node.js, TypeScript, and cloud platforms like AWS and Vercel.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span>How long does a typical project take?</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Project timelines vary based on complexity, but typically range from 2-12 weeks for most web applications and design systems.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header" aria-expanded="false">
+                                    <span>Do you provide ongoing support?</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Yes, I offer various support packages including maintenance, updates, and feature enhancements to keep your project running smoothly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-demo">
+                        <h3 class="showcase-subtitle">Modal Dialog</h3>
+                        <button class="btn btn--primary" data-modal="demo-modal">Open Modal</button>
+                        
+                        <div class="modal" id="demo-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+                            <div class="modal-overlay" data-modal-close></div>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 id="modal-title" class="modal-title">Modal Title</h3>
+                                    <button class="modal-close" data-modal-close aria-label="Close modal">×</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>This is a modal dialog demonstrating the glassmorphism effect and smooth animations.</p>
+                                    <p>It includes proper accessibility features like focus management and keyboard navigation.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn--ghost" data-modal-close>Cancel</button>
+                                    <button class="btn btn--primary">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Visualization -->
+        <section class="section section--dark" id="charts">
+            <div class="container">
+                <h2 class="section-title">Data Visualization</h2>
+                <div class="charts-showcase">
+                    <div class="chart-container">
+                        <h3 class="showcase-subtitle">Skills Chart</h3>
+                        <div class="skill-chart">
+                            <div class="skill-item">
+                                <span class="skill-name">Frontend</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="95"></div>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Backend</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">DevOps</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance & Utilities -->
+        <section class="section section--dark" id="performance">
+            <div class="container">
+                <h2 class="section-title">Performance & Utilities</h2>
+                <div class="performance-showcase">
+                    <div class="performance-grid">
+                        <div class="performance-card">
+                            <h3 class="performance-title">Core Web Vitals</h3>
+                            <div class="metric-item">
+                                <span class="metric-label">LCP</span>
+                                <span class="metric-value metric-value--good">&lt; 2.5s</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">FID</span>
+                                <span class="metric-value metric-value--good">&lt; 100ms</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CLS</span>
+                                <span class="metric-value metric-value--good">&lt; 0.1</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <h3 class="performance-title">PWA Features</h3>
+                            <div class="feature-list">
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Offline Support</span>
+                                </div>
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">App Install</span>
+                                </div>
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Background Sync</span>
+                                </div>
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Push Notifications</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <h3 class="performance-title">Accessibility</h3>
+                            <div class="a11y-score">
+                                <div class="score-circle">
+                                    <span class="score-value">100</span>
+                                    <span class="score-label">Score</span>
+                                </div>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">WCAG 2.1 AA</span>
+                                </div>
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Keyboard Navigation</span>
+                                </div>
+                                <div class="feature-item feature-item--active">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Screen Reader</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="utility-showcase">
+                        <h3 class="showcase-subtitle">Utility Classes</h3>
+                        <div class="utility-grid">
+                            <div class="utility-group">
+                                <h4 class="utility-category">Spacing</h4>
+                                <code class="utility-class">.m-xs, .m-sm, .m-md, .m-lg, .m-xl</code>
+                                <code class="utility-class">.p-xs, .p-sm, .p-md, .p-lg, .p-xl</code>
+                                <code class="utility-class">.mt-*, .mr-*, .mb-*, .ml-*</code>
+                            </div>
+                            <div class="utility-group">
+                                <h4 class="utility-category">Typography</h4>
+                                <code class="utility-class">.text-xs, .text-sm, .text-lg, .text-xl</code>
+                                <code class="utility-class">.font-weight-normal, .font-weight-bold</code>
+                                <code class="utility-class">.text-center, .text-left, .text-right</code>
+                            </div>
+                            <div class="utility-group">
+                                <h4 class="utility-category">Display</h4>
+                                <code class="utility-class">.d-block, .d-inline, .d-flex, .d-grid</code>
+                                <code class="utility-class">.hidden, .visible, .sr-only</code>
+                                <code class="utility-class">.overflow-hidden, .overflow-auto</code>
+                            </div>
+                            <div class="utility-group">
+                                <h4 class="utility-category">Colors</h4>
+                                <code class="utility-class">.text-primary, .text-secondary</code>
+                                <code class="utility-class">.bg-dark, .bg-gray, .bg-gradient</code>
+                                <code class="utility-class">.border-primary, .border-accent</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-text">Gregor Maric</span>
+                    <p class="footer-tagline">Crafting digital excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Web Design</a></li>
+                            <li><a href="#" class="footer-link">Development</a></li>
+                            <li><a href="#" class="footer-link">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Connect</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">LinkedIn</a></li>
+                            <li><a href="#" class="footer-link">GitHub</a></li>
+                            <li><a href="#" class="footer-link">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Gregor Maric. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    
+    <!-- PWA Install Button -->
+    <div class="pwa-install" id="pwaInstall" style="display: none;">
+        <div class="pwa-install-content">
+            <h3>Install App</h3>
+            <p>Install this app on your device for a better experience</p>
+            <div class="pwa-install-actions">
+                <button class="btn btn--primary install-button">Install</button>
+                <button class="btn btn--ghost pwa-dismiss">Maybe Later</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
