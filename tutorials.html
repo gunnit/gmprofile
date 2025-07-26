@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free AI and automation tutorials by Gregor Marić. Learn Power Automate, RPA, and AI implementation with practical examples">
+    <meta name="author" content="Gregor Maric">
+    <meta name="keywords" content="Power Automate tutorials, RPA training, AI automation, YouTube tutorials, free learning">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gregormaric.com/tutorials">
+    <meta property="og:title" content="Free Tutorials - Gregor Marić">
+    <meta property="og:description" content="Free AI and automation tutorials with practical examples for business professionals">
+    <meta property="og:image" content="https://gregormaric.com/img/profile pic.jpg">
+    
+    <title>Free Tutorials - Gregor Marić | AI & Automation Learning Repository</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-main" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Gregor Marić</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="instructor.html" class="nav-link">Instructor</a></li>
+                <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="https://calendly.com/maric-gregor/15min" class="nav-link nav-link--cta" target="_blank">Book Call</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-title__line">Free Learning</span>
+                        <span class="hero-title__line hero-title__line--accent">Resources</span>
+                    </h1>
+                    <p class="hero-subtitle">150+ free tutorials on AI, automation, and business transformation</p>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-label">Views</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-number">9K+</span>
+                            <span class="stat-label">Subscribers</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Tutorials</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutorial Categories -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Tutorial Categories</h2>
+                
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="filter-btn filter-btn--active" data-category="all">All Tutorials</button>
+                    <button class="filter-btn" data-category="power-automate">Power Automate</button>
+                    <button class="filter-btn" data-category="ai-strategy">AI Strategy</button>
+                    <button class="filter-btn" data-category="rpa">RPA & Automation</button>
+                    <button class="filter-btn" data-category="business">Business Process</button>
+                    <button class="filter-btn" data-category="tools">Tools & Software</button>
+                </div>
+
+                <!-- Power Automate Category -->
+                <div class="tutorial-category" data-category="power-automate">
+                    <h3 class="category-title">
+                        <span class="category-icon">⚡</span>
+                        Microsoft Power Automate Desktop
+                    </h3>
+                    <p class="category-description">Master business automation with Microsoft's powerful RPA tool</p>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Power Automate Basics" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">12:34</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Getting Started with Power Automate Desktop</h4>
+                                <p class="tutorial-description">Complete beginner's guide to automation with PAD</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">45K views</span>
+                                    <span class="tutorial-date">2 months ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Beginner</span>
+                                    <span class="tag">Fundamentals</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Web Automation" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">18:45</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Web Automation with Browser Actions</h4>
+                                <p class="tutorial-description">Automate web tasks and data extraction</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">32K views</span>
+                                    <span class="tutorial-date">3 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Intermediate</span>
+                                    <span class="tag">Web Scraping</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Excel Automation" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">15:22</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Excel Data Processing Automation</h4>
+                                <p class="tutorial-description">Automate complex Excel operations and reporting</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">28K views</span>
+                                    <span class="tutorial-date">1 month ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Advanced</span>
+                                    <span class="tag">Excel</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Email Automation" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">10:15</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Email Automation & Processing</h4>
+                                <p class="tutorial-description">Automate email workflows and responses</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">22K views</span>
+                                    <span class="tutorial-date">2 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Intermediate</span>
+                                    <span class="tag">Outlook</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Strategy Category -->
+                <div class="tutorial-category" data-category="ai-strategy">
+                    <h3 class="category-title">
+                        <span class="category-icon">🧠</span>
+                        AI Strategy & Implementation
+                    </h3>
+                    <p class="category-description">Strategic approaches to AI adoption in business</p>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="AI Strategy Framework" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">25:30</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Building Your AI Strategy Framework</h4>
+                                <p class="tutorial-description">Step-by-step guide to developing AI strategy</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">67K views</span>
+                                    <span class="tutorial-date">1 month ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Strategy</span>
+                                    <span class="tag">Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="AI ROI" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">20:45</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Measuring AI ROI and Business Impact</h4>
+                                <p class="tutorial-description">Frameworks for measuring AI project success</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">41K views</span>
+                                    <span class="tutorial-date">3 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">ROI</span>
+                                    <span class="tag">Metrics</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="AI Implementation" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">30:12</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">AI Implementation Best Practices</h4>
+                                <p class="tutorial-description">Practical guide to successful AI deployment</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">35K views</span>
+                                    <span class="tutorial-date">2 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Implementation</span>
+                                    <span class="tag">Best Practices</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RPA Category -->
+                <div class="tutorial-category" data-category="rpa">
+                    <h3 class="category-title">
+                        <span class="category-icon">🤖</span>
+                        RPA & Intelligent Automation
+                    </h3>
+                    <p class="category-description">Robotic Process Automation across different platforms</p>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="RPA Fundamentals" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">22:15</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">RPA Fundamentals: What Every Business Needs to Know</h4>
+                                <p class="tutorial-description">Introduction to robotic process automation</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">89K views</span>
+                                    <span class="tutorial-date">2 months ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Fundamentals</span>
+                                    <span class="tag">Business</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Process Mining" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">18:30</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Process Mining for RPA Opportunities</h4>
+                                <p class="tutorial-description">Identify automation opportunities with process mining</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">26K views</span>
+                                    <span class="tutorial-date">1 month ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Process Mining</span>
+                                    <span class="tag">Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Process Category -->
+                <div class="tutorial-category" data-category="business">
+                    <h3 class="category-title">
+                        <span class="category-icon">📊</span>
+                        Business Process Optimization
+                    </h3>
+                    <p class="category-description">Streamline and optimize business workflows</p>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Process Mapping" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">16:45</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Business Process Mapping for Automation</h4>
+                                <p class="tutorial-description">Map and document processes for automation</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">33K views</span>
+                                    <span class="tutorial-date">3 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Process Mapping</span>
+                                    <span class="tag">Documentation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Change Management" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">24:10</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Change Management for Automation Projects</h4>
+                                <p class="tutorial-description">Successfully implement automation changes</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">19K views</span>
+                                    <span class="tutorial-date">2 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Change Management</span>
+                                    <span class="tag">Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Category -->
+                <div class="tutorial-category" data-category="tools">
+                    <h3 class="category-title">
+                        <span class="category-icon">🛠️</span>
+                        Tools & Software Reviews
+                    </h3>
+                    <p class="category-description">Reviews and comparisons of automation tools</p>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Tool Comparison" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">28:20</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Power Automate vs UiPath vs Automation Anywhere</h4>
+                                <p class="tutorial-description">Comprehensive comparison of leading RPA tools</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">76K views</span>
+                                    <span class="tutorial-date">1 month ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Tool Comparison</span>
+                                    <span class="tag">RPA Platforms</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="AI Tools" class="thumbnail-img">
+                                <div class="play-overlay">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <span class="tutorial-duration">21:35</span>
+                            </div>
+                            <div class="tutorial-content">
+                                <h4 class="tutorial-title">Top 10 AI Tools for Business Automation</h4>
+                                <p class="tutorial-description">Essential AI tools every business should know</p>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-views">54K views</span>
+                                    <span class="tutorial-date">2 weeks ago</span>
+                                </div>
+                                <div class="tutorial-tags">
+                                    <span class="tag">AI Tools</span>
+                                    <span class="tag">Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Channel CTA -->
+        <section class="section section--dark">
+            <div class="container">
+                <div class="channel-cta">
+                    <div class="channel-info">
+                        <h2 class="channel-title">RPA Champion YouTube Channel</h2>
+                        <p class="channel-description">Subscribe for weekly automation tutorials, AI strategy insights, and business transformation tips</p>
+                        <div class="channel-stats">
+                            <div class="channel-stat">
+                                <span class="stat-number">9K+</span>
+                                <span class="stat-label">Subscribers</span>
+                            </div>
+                            <div class="channel-stat">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">Videos</span>
+                            </div>
+                            <div class="channel-stat">
+                                <span class="stat-number">500K+</span>
+                                <span class="stat-label">Total Views</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channel-actions">
+                        <a href="https://www.youtube.com/c/RPAChampion?sub_confirmation=1" class="btn btn--primary btn--large" target="_blank">
+                            Subscribe on YouTube
+                        </a>
+                        <a href="https://www.youtube.com/c/RPAChampion" class="btn btn--secondary btn--large" target="_blank">
+                            Browse All Videos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Playlists -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Learning Paths</h2>
+                <div class="playlists-grid">
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Beginner Automation" class="thumbnail-img">
+                            <div class="playlist-overlay">
+                                <span class="playlist-count">12 videos</span>
+                            </div>
+                        </div>
+                        <div class="playlist-content">
+                            <h3 class="playlist-title">Power Automate for Beginners</h3>
+                            <p class="playlist-description">Complete learning path from zero to automation hero</p>
+                            <div class="playlist-meta">
+                                <span class="playlist-duration">3.5 hours</span>
+                                <span class="playlist-level">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="AI Strategy" class="thumbnail-img">
+                            <div class="playlist-overlay">
+                                <span class="playlist-count">8 videos</span>
+                            </div>
+                        </div>
+                        <div class="playlist-content">
+                            <h3 class="playlist-title">AI Strategy for Leaders</h3>
+                            <p class="playlist-description">Strategic AI implementation for business leaders</p>
+                            <div class="playlist-meta">
+                                <span class="playlist-duration">2.8 hours</span>
+                                <span class="playlist-level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card">
+                        <div class="playlist-thumbnail">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Business Process" class="thumbnail-img">
+                            <div class="playlist-overlay">
+                                <span class="playlist-count">15 videos</span>
+                            </div>
+                        </div>
+                        <div class="playlist-content">
+                            <h3 class="playlist-title">Business Process Automation</h3>
+                            <p class="playlist-description">End-to-end process automation strategies</p>
+                            <div class="playlist-meta">
+                                <span class="playlist-duration">4.2 hours</span>
+                                <span class="playlist-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="section section--dark">
+            <div class="container">
+                <div class="newsletter-signup">
+                    <h2 class="newsletter-title">Stay Updated</h2>
+                    <p class="newsletter-description">Get notified when new tutorials are published and receive exclusive automation tips</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="btn btn--primary">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note">No spam, unsubscribe anytime</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-text">Gregor Marić</span>
+                    <p class="footer-tagline">Free automation and AI education for everyone</p>
+                    <div class="footer-contact">
+                        <p>📺 RPA Champion YouTube Channel</p>
+                        <p>🎓 150+ Free Tutorials</p>
+                        <p>🌐 500K+ Views Worldwide</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Learning Paths</h4>
+                        <ul class="footer-list">
+                            <li><a href="#power-automate" class="footer-link">Power Automate</a></li>
+                            <li><a href="#ai-strategy" class="footer-link">AI Strategy</a></li>
+                            <li><a href="#rpa" class="footer-link">RPA Fundamentals</a></li>
+                            <li><a href="#business" class="footer-link">Business Process</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Free Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://www.youtube.com/c/RPAChampion" class="footer-link" target="_blank">YouTube Channel</a></li>
+                            <li><a href="https://www.linkedin.com/learning/learning-power-automate-desktop-for-non-developers" class="footer-link" target="_blank">LinkedIn Learning</a></li>
+                            <li><a href="https://www.udemy.com/user/greg-mar/" class="footer-link" target="_blank">Udemy Courses</a></li>
+                            <li><a href="https://www.skillshare.com/en/user/gregor" class="footer-link" target="_blank">Skillshare Classes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Connect</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://www.linkedin.com/in/maricgregor" class="footer-link" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/gregormaric" class="footer-link" target="_blank">Twitter</a></li>
+                            <li><a href="https://linktr.ee/gregormaric" class="footer-link" target="_blank">All Links</a></li>
+                            <li><a href="mailto:gregor@pugliai.com" class="footer-link">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Gregor Marić. All rights reserved. | Free education for automation professionals</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

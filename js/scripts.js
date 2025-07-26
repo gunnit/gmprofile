@@ -1694,6 +1694,144 @@ class PWAManager {
   }
 }
 
+// ==========================================================================
+// Slideshow Functionality
+// ==========================================================================
+
+// Global slideshow variables
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const indicators = document.querySelectorAll('.indicator');
+let slideInterval;
+
+// Change slide function
+function changeSlide(direction) {
+  if (slides.length === 0) return;
+  
+  // Remove active class from current slide and indicator
+  slides[currentSlide]?.classList.remove('slide--active');
+  indicators[currentSlide]?.classList.remove('indicator--active');
+  
+  // Calculate new slide index
+  currentSlide += direction;
+  
+  // Handle wrap around
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  } else if (currentSlide < 0) {
+    currentSlide = slides.length - 1;
+  }
+  
+  // Add active class to new slide and indicator
+  slides[currentSlide]?.classList.add('slide--active');
+  indicators[currentSlide]?.classList.add('indicator--active');
+  
+  // Reset autoplay timer
+  resetSlideInterval();
+}
+
+// Go to specific slide
+function currentSlideIndex(index) {
+  if (slides.length === 0) return;
+  
+  // Remove active class from current slide and indicator
+  slides[currentSlide]?.classList.remove('slide--active');
+  indicators[currentSlide]?.classList.remove('indicator--active');
+  
+  // Set new slide index
+  currentSlide = index - 1; // Convert to 0-based index
+  
+  // Add active class to new slide and indicator
+  slides[currentSlide]?.classList.add('slide--active');
+  indicators[currentSlide]?.classList.add('indicator--active');
+  
+  // Reset autoplay timer
+  resetSlideInterval();
+}
+
+// Auto-advance slides
+function startSlideInterval() {
+  slideInterval = setInterval(() => {
+    changeSlide(1);
+  }, 5000); // Change slide every 5 seconds
+}
+
+// Reset the interval
+function resetSlideInterval() {
+  clearInterval(slideInterval);
+  startSlideInterval();
+}
+
+// Initialize slideshow
+function initializeSlideshow() {
+  if (slides.length > 0) {
+    // Start autoplay
+    startSlideInterval();
+    
+    // Pause autoplay on hover
+    const slideshowContainer = document.querySelector('.slideshow-container');
+    if (slideshowContainer) {
+      slideshowContainer.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+      
+      slideshowContainer.addEventListener('mouseleave', () => {
+        startSlideInterval();
+      });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        changeSlide(-1);
+      } else if (e.key === 'ArrowRight') {
+        changeSlide(1);
+      }
+    });
+    
+    // Touch/swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    if (slideshowContainer) {
+      slideshowContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+      
+      slideshowContainer.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+    }
+    
+    function handleSwipe() {
+      const threshold = 50; // Minimum distance for swipe
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+          // Swiped left - next slide
+          changeSlide(1);
+        } else {
+          // Swiped right - previous slide
+          changeSlide(-1);
+        }
+      }
+    }
+  }
+}
+
+// Make functions globally available for onclick handlers
+window.changeSlide = changeSlide;
+window.currentSlide = currentSlideIndex;
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeSlideshow);
+} else {
+  initializeSlideshow();
+}
+
 // Export for potential module usage
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { 
@@ -1702,6 +1840,8 @@ if (typeof module !== 'undefined' && module.exports) {
     InteractiveComponentsManager, 
     AnimationController, 
     FormEnhancement, 
-    PWAManager 
+    PWAManager,
+    changeSlide,
+    currentSlideIndex
   };
 }
