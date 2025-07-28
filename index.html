@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gregor Marić - AI Implementation Strategy Expert, Automation Training Specialist. CEO of PugliAI, LinkedIn Learning Instructor, YouTube Creator">
+    <meta name="description" content="Transform your business with AI that actually works. Gregor Marić has trained 100K+ professionals and transformed 500+ companies. Get real AI results, not just theory.">
     <meta name="author" content="Gregor Maric">
-    <meta name="keywords" content="AI strategy, automation training, RPA, Power Automate, business transformation, LinkedIn Learning, PugliAI">
+    <meta name="keywords" content="AI strategy, automation training, RPA, Power Automate, business transformation, LinkedIn Learning, PugliAI, artificial intelligence consulting, digital transformation, enterprise AI">
+    <link rel="canonical" href="https://gregormaric.com">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0a0a0a">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gregormaric.com">
-    <meta property="og:title" content="Gregor Marić - AI Strategy & Automation Expert">
-    <meta property="og:description" content="Transform your business with AI implementation strategy and automation training from industry expert Gregor Marić">
+    <meta property="og:title" content="Scale Beyond Limits With AI That Works - Gregor Marić">
+    <meta property="og:description" content="Turn AI from buzzword to business advantage. 100K+ professionals trained • 500+ companies transformed • Real results, not just theory.">
     <meta property="og:image" content="https://gregormaric.com/img/profile pic.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://gregormaric.com">
-    <meta property="twitter:title" content="Gregor Marić - AI Strategy & Automation Expert">
-    <meta property="twitter:description" content="Transform your business with AI implementation strategy and automation training">
+    <meta property="twitter:title" content="Scale Beyond Limits With AI That Works - Gregor Marić">
+    <meta property="twitter:description" content="Turn AI from buzzword to business advantage. Real results, not just theory.">
     <meta property="twitter:image" content="https://gregormaric.com/img/profile pic.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- TODO: Add favicon files -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg"> -->
+    <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="/manifest.json">
@@ -40,7 +42,7 @@
     <meta name="msapplication-TileColor" content="#0a0a0a">
     <meta name="msapplication-config" content="/browserconfig.xml">
     
-    <title>Gregor Marić - AI Strategy & Automation Expert | Transform Your Business</title>
+    <title>Scale Beyond Limits With AI That Works | Gregor Marić - AI Strategy Expert</title>
     
     <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,7 +100,7 @@
                 <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="https://calendly.com/maric-gregor/15min" class="nav-link nav-link--cta" target="_blank">Book Call</a></li>
+                <li><a href="https://calendly.com/maric-gregor/15min" class="nav-link nav-link--cta" target="_blank" rel="noopener">Book Call</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -119,17 +121,23 @@
     <main class="main-content">
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-bg"></div>
+            <div class="hero-bg">
+                <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+                    <source src="img/gregor_speach_webm.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-profile">
                         <img src="img/profile pic.jpg" alt="Gregor Marić" class="hero-image">
                     </div>
                     <h1 class="hero-title">
-                        <span class="hero-title__line">Transform Your Business</span>
-                        <span class="hero-title__line hero-title__line--accent">With AI Strategy</span>
+                        <span class="hero-title__line">Scale Beyond Limits</span>
+                        <span class="hero-title__line hero-title__line--accent">With AI That Works</span>
                     </h1>
-                    <p class="hero-subtitle">AI Implementation Expert • Automation Training Specialist • CEO of PugliAI • LinkedIn Learning Instructor</p>
+                    <p class="hero-subtitle">Turn AI from buzzword to business advantage. 100K+ professionals trained • 500+ companies transformed • Real results, not just theory</p>
                     
                     <!-- Platform Logos -->
                     <div class="platform-logos">
@@ -171,7 +179,7 @@
                     </div>
                     
                     <div class="hero-cta">
-                        <a href="https://calendly.com/maric-gregor/15min" class="btn btn--primary" target="_blank">Book Strategy Call</a>
+                        <a href="https://calendly.com/maric-gregor/15min" class="btn btn--primary" target="_blank" rel="noopener">Book Strategy Call</a>
                         <a href="#speaking-events" class="btn btn--secondary">View Experience</a>
                     </div>
                 </div>
@@ -184,44 +192,140 @@
                 <h2 class="section-title">Speaking & Training Events</h2>
                 <div class="slideshow-container">
                     <div class="slide slide--active">
-                        <img src="img/automation asia speaker.jpg" alt="Automation Asia Speaking Event" class="slide-img">
+                        <img src="img/automation asia speaker.jpg" alt="Automation Asia Speaking Event" class="slide-img" loading="lazy">
                         <div class="slide-content">
                             <h3 class="slide-title">Automation Asia Conference</h3>
                             <p class="slide-description">Keynote speaker on AI-driven automation strategies for enterprise transformation</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="img/gregor next to banner for italian event.jpg" alt="Italian Technology Event" class="slide-img">
+                        <img src="img/gregor next to banner for italian event.jpg" alt="Italian Technology Event" class="slide-img" loading="lazy">
                         <div class="slide-content">
                             <h3 class="slide-title">Italian Tech Summit</h3>
                             <p class="slide-description">Leading workshops on digital transformation and AI implementation</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="img/gregor speech.jpg" alt="Gregor Speaking at Conference" class="slide-img">
+                        <img src="img/gregor speech.jpg" alt="Gregor Speaking at Conference" class="slide-img" loading="lazy">
                         <div class="slide-content">
                             <h3 class="slide-title">International Business Conference</h3>
                             <p class="slide-description">Presenting latest trends in intelligent automation and RPA solutions</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="img/webinar cover .jpeg" alt="Webinar Cover" class="slide-img">
+                        <img src="img/webinar cover .jpeg" alt="Webinar Cover" class="slide-img" loading="lazy">
                         <div class="slide-content">
                             <h3 class="slide-title">Global Webinar Series</h3>
                             <p class="slide-description">Monthly webinars reaching 10,000+ professionals worldwide on AI strategy</p>
                         </div>
                     </div>
+                    <div class="slide">
+                        <img src="img/gregor_speaking_gruppo_sole.jpg" alt="Gregor Speaking at Gruppo Sole Event" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Gruppo Sole Corporate Training</h3>
+                            <p class="slide-description">Executive workshop on AI transformation strategies for enterprise leadership</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/gregor_speakingvertical.jpg" alt="Gregor Vertical Speaking Event" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Industry Conference Keynote</h3>
+                            <p class="slide-description">Delivering insights on next-generation automation technologies</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/gregor_speakingvertical2.jpg" alt="Gregor Speaking Event 2" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Digital Transformation Summit</h3>
+                            <p class="slide-description">Leading discussions on AI implementation best practices</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/gregor_speakingvertical3.jpg" alt="Gregor Speaking Event 3" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Technology Innovation Forum</h3>
+                            <p class="slide-description">Presenting cutting-edge automation solutions for modern businesses</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/hersheys_webevent.jpg" alt="Hershey's Web Event" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Hershey's Digital Innovation</h3>
+                            <p class="slide-description">Corporate partnership on AI-driven process optimization</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/metaverse_event.jpg" alt="Metaverse Event" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Metaverse Business Summit</h3>
+                            <p class="slide-description">Exploring AI applications in virtual business environments</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/metaverse_event2.jpg" alt="Metaverse Event 2" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Virtual Reality Conference</h3>
+                            <p class="slide-description">Bridging AI and immersive technology for enterprise solutions</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/metaverseevent3.jpg" alt="Metaverse Event 3" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Future of Work Symposium</h3>
+                            <p class="slide-description">Shaping the future workplace with AI and virtual collaboration</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/web_summit.jpg" alt="Web Summit" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Web Summit Tech Conference</h3>
+                            <p class="slide-description">Global stage presentation on AI democratization for businesses</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/webinar_event.jpg" alt="Webinar Event" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Interactive Webinar Series</h3>
+                            <p class="slide-description">Live training sessions on practical AI implementation</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/vertical_speaker_image.jpg" alt="Vertical Speaker Image" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Leadership Excellence Forum</h3>
+                            <p class="slide-description">Executive coaching on AI-driven organizational transformation</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/speakingevent.jpg" alt="Speaking Event" class="slide-img" loading="lazy">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Professional Development Conference</h3>
+                            <p class="slide-description">Training professionals on automation tools and AI strategy</p>
+                        </div>
+                    </div>
                     
                     <!-- Navigation -->
-                    <button class="slide-nav slide-nav--prev" onclick="changeSlide(-1)">❮</button>
-                    <button class="slide-nav slide-nav--next" onclick="changeSlide(1)">❯</button>
+                    <button class="slide-nav slide-nav--prev" onclick="changeSlide(-1)" aria-label="Previous slide">❮</button>
+                    <button class="slide-nav slide-nav--next" onclick="changeSlide(1)" aria-label="Next slide">❯</button>
                     
                     <!-- Indicators -->
                     <div class="slide-indicators">
-                        <span class="indicator indicator--active" onclick="currentSlide(1)"></span>
-                        <span class="indicator" onclick="currentSlide(2)"></span>
-                        <span class="indicator" onclick="currentSlide(3)"></span>
-                        <span class="indicator" onclick="currentSlide(4)"></span>
+                        <span class="indicator indicator--active" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
+                        <span class="indicator" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
+                        <span class="indicator" onclick="currentSlide(3)" aria-label="Go to slide 3"></span>
+                        <span class="indicator" onclick="currentSlide(4)" aria-label="Go to slide 4"></span>
+                        <span class="indicator" onclick="currentSlide(5)" aria-label="Go to slide 5"></span>
+                        <span class="indicator" onclick="currentSlide(6)" aria-label="Go to slide 6"></span>
+                        <span class="indicator" onclick="currentSlide(7)" aria-label="Go to slide 7"></span>
+                        <span class="indicator" onclick="currentSlide(8)" aria-label="Go to slide 8"></span>
+                        <span class="indicator" onclick="currentSlide(9)" aria-label="Go to slide 9"></span>
+                        <span class="indicator" onclick="currentSlide(10)" aria-label="Go to slide 10"></span>
+                        <span class="indicator" onclick="currentSlide(11)" aria-label="Go to slide 11"></span>
+                        <span class="indicator" onclick="currentSlide(12)" aria-label="Go to slide 12"></span>
+                        <span class="indicator" onclick="currentSlide(13)" aria-label="Go to slide 13"></span>
+                        <span class="indicator" onclick="currentSlide(14)" aria-label="Go to slide 14"></span>
+                        <span class="indicator" onclick="currentSlide(15)" aria-label="Go to slide 15"></span>
+                        <span class="indicator" onclick="currentSlide(16)" aria-label="Go to slide 16"></span>
                     </div>
                 </div>
             </div>
@@ -230,12 +334,12 @@
         <!-- Value Proposition -->
         <section class="section section--dark">
             <div class="container">
-                <h2 class="section-title">Transforming Businesses Through AI & Automation</h2>
+                <h2 class="section-title">Stop Losing to Competitors Who Act Faster</h2>
                 <div class="value-grid">
                     <div class="value-card">
                         <div class="value-icon">🎯</div>
-                        <h3 class="value-title">AI Strategy Consulting</h3>
-                        <p class="value-description">Develop comprehensive AI roadmaps that align with your business objectives and deliver measurable ROI</p>
+                        <h3 class="value-title">AI Strategy That Actually Delivers</h3>
+                        <p class="value-description">Skip the endless pilot projects. Get a bulletproof AI roadmap that delivers measurable ROI in 90 days, not 3 years</p>
                         <ul class="value-features">
                             <li>Custom AI opportunity assessments</li>
                             <li>Technology stack recommendations</li>
@@ -246,8 +350,8 @@
                     
                     <div class="value-card">
                         <div class="value-icon">🎓</div>
-                        <h3 class="value-title">Executive AI Training</h3>
-                        <p class="value-description">Empower your leadership team with practical AI knowledge through hands-on workshops and strategic guidance</p>
+                        <h3 class="value-title">Turn Your Team Into AI Champions</h3>
+                        <p class="value-description">No more "AI anxiety" in boardrooms. Transform your executives from AI-confused to AI-confident in weeks, not months</p>
                         <ul class="value-features">
                             <li>Executive AI literacy programs</li>
                             <li>Interactive learning sessions</li>
@@ -258,8 +362,8 @@
                     
                     <div class="value-card">
                         <div class="value-icon">⚡</div>
-                        <h3 class="value-title">Automation Solutions</h3>
-                        <p class="value-description">Eliminate repetitive tasks and boost productivity with proven automation strategies and implementations</p>
+                        <h3 class="value-title">Eliminate Soul-Crushing Work</h3>
+                        <p class="value-description">Free your people from mind-numbing tasks. Proven automation that saves 40+ hours per employee per month</p>
                         <ul class="value-features">
                             <li>Process automation consulting</li>
                             <li>Microsoft Power Automate expertise</li>
@@ -301,7 +405,7 @@
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <blockquote class="testimonial-quote">
-                            "Gregor's AI strategy consulting transformed our approach to digital transformation. His practical expertise and clear communication made complex AI concepts accessible to our entire leadership team. The ROI from his recommendations exceeded our expectations."
+                            "We went from AI confusion to AI confidence in 6 weeks. Gregor cut through the hype and delivered a strategy that actually works. Our automation savings paid for his consulting fee in the first month alone."
                         </blockquote>
                         <div class="testimonial-author">
                             <div class="author-avatar"></div>
@@ -319,13 +423,13 @@
         <section class="section">
             <div class="container">
                 <div class="cta-container">
-                    <h2 class="cta-title">Ready to Transform Your Business?</h2>
-                    <p class="cta-subtitle">Book a 15-minute strategy call to discover how AI can drive your business forward</p>
+                    <h2 class="cta-title">Your Competitors Are Already Moving</h2>
+                    <p class="cta-subtitle">Don't let them leave you behind. Book your 15-minute AI strategy breakthrough call now</p>
                     <div class="cta-actions">
-                        <a href="https://calendly.com/maric-gregor/15min" class="btn btn--primary btn--large" target="_blank">Book Strategy Call</a>
+                        <a href="https://calendly.com/maric-gregor/15min" class="btn btn--primary btn--large" target="_blank" rel="noopener">Book Strategy Call</a>
                         <a href="mailto:gregor@pugliai.com" class="btn btn--ghost btn--large">Send Email</a>
                     </div>
-                    <p class="cta-note">Or explore my voice AI assistant for instant answers about my services</p>
+                    <p class="cta-note">⚡ Free 15-min call • No sales pitch • Just actionable AI insights for your business</p>
                 </div>
             </div>
         </section>
@@ -357,19 +461,19 @@
                     <div class="footer-section">
                         <h4 class="footer-title">Learning</h4>
                         <ul class="footer-list">
-                            <li><a href="https://www.linkedin.com/learning/learning-power-automate-desktop-for-non-developers" class="footer-link" target="_blank">LinkedIn Learning</a></li>
-                            <li><a href="https://www.youtube.com/c/RPAChampion" class="footer-link" target="_blank">YouTube Channel</a></li>
-                            <li><a href="https://www.udemy.com/user/greg-mar/" class="footer-link" target="_blank">Udemy Courses</a></li>
-                            <li><a href="https://www.skillshare.com/en/user/gregor" class="footer-link" target="_blank">Skillshare Classes</a></li>
+                            <li><a href="https://www.linkedin.com/learning/learning-power-automate-desktop-for-non-developers" class="footer-link" target="_blank" rel="noopener">LinkedIn Learning</a></li>
+                            <li><a href="https://www.youtube.com/c/RPAChampion" class="footer-link" target="_blank" rel="noopener">YouTube Channel</a></li>
+                            <li><a href="https://www.udemy.com/user/greg-mar/" class="footer-link" target="_blank" rel="noopener">Udemy Courses</a></li>
+                            <li><a href="https://www.skillshare.com/en/user/gregor" class="footer-link" target="_blank" rel="noopener">Skillshare Classes</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
                         <h4 class="footer-title">Connect</h4>
                         <ul class="footer-list">
-                            <li><a href="https://www.linkedin.com/in/maricgregor" class="footer-link" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://twitter.com/gregormaric" class="footer-link" target="_blank">Twitter</a></li>
-                            <li><a href="https://linktr.ee/gregormaric" class="footer-link" target="_blank">All Links</a></li>
-                            <li><a href="https://calendly.com/maric-gregor/15min" class="footer-link" target="_blank">Book Meeting</a></li>
+                            <li><a href="https://www.linkedin.com/in/maricgregor" class="footer-link" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/gregormaric" class="footer-link" target="_blank" rel="noopener">Twitter</a></li>
+                            <li><a href="https://linktr.ee/gregormaric" class="footer-link" target="_blank" rel="noopener">All Links</a></li>
+                            <li><a href="https://calendly.com/maric-gregor/15min" class="footer-link" target="_blank" rel="noopener">Book Meeting</a></li>
                         </ul>
                     </div>
                 </div>
